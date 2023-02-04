@@ -3,11 +3,11 @@ const books = require('./src/books');
 
 var booksDirectory = books;
 
-router.get('/books', (req, res) =>{
+router.get('/', (req, res) =>{
     res.send(booksDirectory);
 });
 
-router.get('/books/:id', (req, res) =>{
+router.get('/:id', (req, res) =>{
     const { id } = req.params;
 
     const book = booksDirectory.find(b => b.id === id);
@@ -17,7 +17,7 @@ router.get('/books/:id', (req, res) =>{
     res.send(book);
 });
 
-router.post('/books', (req, res) =>{
+router.post('/', (req, res) =>{
     const {
         id,
         Title,
@@ -41,7 +41,7 @@ router.post('/books', (req, res) =>{
     res.send(book);
 });
 
-router.put('/books/:id', (req, res) =>{
+router.put('/:id', (req, res) =>{
     const { id } = req.params;
     const {
         Title,
@@ -70,7 +70,7 @@ router.put('/books/:id', (req, res) =>{
     res.send(updatedook);
 });
 
-router.delete('/books/:id', (req, res) =>{
+router.delete('/:id', (req, res) =>{
     const { id } = req.params;
 
     let book = booksDirectory.find(b => b.id === id);

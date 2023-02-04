@@ -1,0 +1,250 @@
+:root{
+    --azul: #77B6EA;
+    --oscuro: #37393A;
+    --gris: #C7D3DD;
+    --beige: #D6C9C9;
+    --claro: #E8EEF2;
+
+    --fuentePrincipal: 'Rajdhani', sans-serif;
+
+    --regular: 400;
+    --medium: 500;
+    --semmiBold: 600;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 10px = 1rem*/
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+    margin: 0;
+}
+
+h1, h2{
+    margin: 0;
+    color: var(--claro);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.6rem;
+}
+
+
+.contenedor{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: var(--azul);
+    height: 10rem;
+}
+
+.header_contenedor{
+    height: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+p{
+    font-size: 3.2rem;
+    margin: 0;
+}
+
+.method_get{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2FFDA;
+    color: #51E57B;
+    font-weight: var(--semmiBold);
+    height: 5rem;
+    width: 10rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: 1px solid var(--gris);
+}
+
+.method_post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3FFD2;
+    color: #E5BC51;
+    font-weight: var(--semmiBold);
+    height: 5rem;
+    width: 10rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: 1px solid var(--gris);
+}
+
+.method_put{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2E2FF;
+    color: #5195E5;
+    font-weight: var(--semmiBold);
+    height: 5rem;
+    width: 10rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: 1px solid var(--gris);
+}
+
+.method_delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD2D2;
+    color: #E55151;
+    font-weight: var(--semmiBold);
+    height: 5rem;
+    width: 10rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: 1px solid var(--gris);
+}
+
+.route{
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+    background-color: var(--claro);
+    height: 5rem;
+    width: 100rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid var(--gris);
+}
+
+.endPoint{
+    display: flex;
+    align-items: center;
+    margin-top: 5rem;
+    max-height: 10.4rem;
+}
+
+.contenedor_endpoints{
+    margin-bottom: 5rem;
+}
+
+.icon:hover{
+    cursor: pointer;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 2.5rem;
+}
+
+input{
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border: none;
+    background-color: var(--azul);
+    color: var(--claro);
+    font-weight: var(--medium);
+    font-size: 2rem;
+    border-radius: 1rem;
+}
+
+input:hover{
+    cursor: pointer;
+    background-color: #55a2e2;
+}
+
+.code{
+    font-size: 2rem;
+    background-color: var(--oscuro);
+    color: var(--claro);
+    border-radius: 2rem;
+}
+
+.endpoint_consumo{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.gitHubButtom{
+    position: relative;
+}
+
+.footer{
+    background-color: var(--azul);
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer p{
+    color: var(--claro);
+}
+
+.footer_contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialmedia_buttom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3.6rem;
+}
+
+.gitHubButtom{
+    padding: .1rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.gitHubButtom:hover{
+    background-color: var(--oscuro);
+    cursor: pointer;
+}
+
+.linkedinButtom{
+    padding: .1rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.linkedinButtom:hover{
+    background-color: #0a66c2;
+    cursor: pointer;
+}
+
+.instagramButtom{
+    padding: .1rem;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.instagramButtom:hover{
+    background-color: #833AB4;
+    cursor: pointer;
+}
