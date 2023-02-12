@@ -18,19 +18,19 @@
     </header>
 
     <main class="contenedor">
-        <div class="contenedor_endpoints contenedor">
-            <div class="contenedor_endPoint">
+        <ul class="contenedor_endpoints contenedor">
+            <li class="contenedor_endPoint">
                 <div class="endPoint">
                         <p class="method_get"><span>GET</span></p>
-                        <p class="route">/</p>
+                        <p class="route">/books</p>
                 </div>
                 <div class="row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="15" y1="16" x2="19" y2="12" />
                         <line x1="15" y1="8" x2="19" y2="12" />
-                      </svg>
+                    </svg>
                 </div>
                 <div class="endpoint_consumo contenedor">
                     <form class="formulario" action="/books" method="get">
@@ -38,166 +38,102 @@
                             <label for="">This endpoint will get all books</label>
                         </div>
                         <div>
-                            <input type="submit" value="Get all books">
+                            <input class="boton" type="submit" value="Get all books">
                         </div>
                     </form>
 
                     <div class="code">
                         <pre>
-                            <code>
-[
-    {
-        "id":"10001",
-        "Title":"Generic Book",
-        "Author":"Daniel Guerra",
-        "Genre":[
-            "Mystery",
-            "Drama"
-        ],
-        "Detail":{
-            "Language":"English",
-            "Number_pages":200,
-            "Publication_year":2020
-        }
-    },
-    {
-        "id":"10002",
-        "Title":"Something",
-        "Author":"Juan Aguilar",
-        "Genre":[
-            "Comedy"
-        ],
-        "Detail":{
-            "Language":"Spanish",
-            "Number_pages":150,
-            "Publication_year":2019
-        }
-    },
-    {
-        "id":"10003",
-        "Title":"Another long story",
-        "Author":"Daniel Guerra",
-        "Genre":[
-            "epic or narrative",
-            "Drama"
-        ],
-        "Detail":{
-            "Language":"Spanish",
-            "Number_pages":150,
-            "Publication_year":2019
-        }
-    },
-    {
-        "id":"10004",
-        "Title":"The return",
-        "Author":"Juana Salazar",
-        "Genre":[
-            "Drama",
-            "suspense",
-            "Fiction"
-        ],
-        "Detail":{
-            "Language":"English",
-            "Number_pages":150,
-            "Publication_year":2019
-        }
-    },
-    {
-        "id":"10005",
-        "Title":"Chronicles of one more pedestrian",
-        "Author":"Severus Gil",
-        "Genre":[
-            "Drama",
-            "suspense"
-        ],
-        "Detail":{
-            "Language":"English",
-            "Number_pages":150,
-            "Publication_year":2019
-        }
-    }
-]
+                            <code class="result">
+
                             </code>
                         </pre>
                     </div>
                 </div>
-            </div>
+            </li>
 
-            <div class="contenedor_endPoint">
-                <div class="endPoint">
-                        <p class="method_get"><span>GET</span></p>
-                        <p class="route">/book</p>
-                </div>
-                <div class="row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <line x1="5" y1="12" x2="19" y2="12" />
-                        <line x1="15" y1="16" x2="19" y2="12" />
-                        <line x1="15" y1="8" x2="19" y2="12" />
-                      </svg>
-                </div>
-            </div>
-
-            <div class="contenedor_endPoint">
+            <li class="contenedor_endPoint">
                 <div class="endPoint">
                         <p class="method_get"><span>GET</span></p>
                         <p class="route">/book/id</p>
                 </div>
                 <div class="row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="15" y1="16" x2="19" y2="12" />
                         <line x1="15" y1="8" x2="19" y2="12" />
                       </svg>
                 </div>
-            </div>
 
-            <div class="contenedor_endPoint">
+                <div class="endpoint_consumo contenedor">
+                    <form class="formulario" action="/books" method="get">
+                        <div>
+                            <label for="">Enter the id of the book you want to consult</label>
+                        </div>
+                        <div>
+                            <input type="number" id="idBook" class="idBook">
+                        </div>
+                        <div>
+                            <input class="boton" type="submit" value="Get specific book">
+                        </div>
+                    </form>
+
+                    <div class="code">
+                        <pre>
+                            <code class="result">
+
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </li>      
+
+            <li class="contenedor_endPoint">
                 <div class="endPoint">
                         <p class="method_post"><span>POST</span></p>
                         <p class="route">/book</p>
                 </div>
                 <div class="row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="15" y1="16" x2="19" y2="12" />
                         <line x1="15" y1="8" x2="19" y2="12" />
                       </svg>
                 </div>
-            </div>
+            </li>
 
-            <div class="contenedor_endPoint">
+            <li class="contenedor_endPoint">
                 <div class="endPoint">
                         <p class="method_put"><span>PUT</span></p>
                         <p class="route">/book/id</p>
                 </div>
                 <div class="row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="15" y1="16" x2="19" y2="12" />
                         <line x1="15" y1="8" x2="19" y2="12" />
                       </svg>
                 </div>
-            </div>
+            </li>
 
-            <div class="contenedor_endPoint">
+            <li class="contenedor_endPoint">
                 <div class="endPoint">
                         <p class="method_delete"><span>DELETE</span></p>
                         <p class="route">/book/id</p>
                 </div>
                 <div class="row">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow_icon icon-tabler icon-tabler-arrow-narrow-right" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#37393A" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="5" y1="12" x2="19" y2="12" />
                         <line x1="15" y1="16" x2="19" y2="12" />
                         <line x1="15" y1="8" x2="19" y2="12" />
                       </svg>
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </main>
     
     <footer class="footer">
@@ -240,5 +176,6 @@
                 </div>
             </div>
     </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>

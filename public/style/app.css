@@ -134,10 +134,27 @@ p{
 
 .contenedor_endpoints{
     margin-bottom: 5rem;
+    list-style: none;
 }
 
-.icon:hover{
+.row{
+    width: 4.4rem;
+}
+
+.arrow_icon{
+    margin-top: 1rem;
+    transition: .3s;
+    transform: rotate(0deg);
+}
+
+.arrow_icon:hover{
     cursor: pointer;
+}
+
+.arrow_icon_abajo{
+    margin-top: 1rem;
+    transition: .3s;
+    transform: rotate(90deg);
 }
 
 .formulario{
@@ -149,7 +166,7 @@ label{
     font-size: 2.5rem;
 }
 
-input{
+.boton{
     margin-top: 2rem;
     padding: 1rem 3rem;
     border: none;
@@ -160,9 +177,22 @@ input{
     border-radius: 1rem;
 }
 
-input:hover{
+.boton:hover{
     cursor: pointer;
     background-color: #55a2e2;
+}
+
+.endpoint_consumo{
+    display: none;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.endpoint_consumo_on{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 5rem;
 }
 
 .code{
@@ -170,12 +200,13 @@ input:hover{
     background-color: var(--oscuro);
     color: var(--claro);
     border-radius: 2rem;
+    padding: 2rem;
 }
 
-.endpoint_consumo{
-    display: flex;
-    justify-content: space-between;
-    gap: 3rem;
+.idBook{
+    border: 1px solid var(--gris);
+    padding: .8rem;
+    border-radius: 1rem;
 }
 
 .gitHubButtom{
@@ -247,4 +278,8 @@ input:hover{
 .instagramButtom:hover{
     background-color: #833AB4;
     cursor: pointer;
+}
+
+.result{
+    display: none;
 }
